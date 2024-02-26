@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking Bad – Que comience el juego!</title>
+    <link rel="stylesheet" href="ejercicio_StephanieDosS.css">
+    <link  rel="icon" href="img/icon.png"     type="image/x-icon">
+</head>
+<body class="formulario">
+    <h1>Breaking Bad – Que comience el juego!</h1>
+    <form action="mailto:raul.rodriguez@proeducaglobal.com" method="post" name="formulario" enctype="multipart/form-data">
+        
+        <label for="nombre">Nombre <input type="text" placeholder="Ejemplo: Stephanie" width="200px" id="nombre" required></label>
+        <label for="apellidos">Apellidos <input type="text" placeholder="Introduzca ambos apellidos.Ejemplo: Dos Santos Valesillo" width="200px" id="apellidos" required></label> 
+        <label for="direccion">Direccion Postal <input type="text" placeholder="Calle o avenida, numero, piso, código postal, ciudad" width="200px" id="direccion"></label>  
+        <label for="dni">DNI <input type="text" placeholder="Ingresa un DNI valido incluida la letra" width="200px" id="DNI"></label>   
+        <label for="mail">Correo electrónico <input type="email" placeholder="tucorreo@ejemplo.com" id="mail" required></label> 
+        <label for="sexo">Seleccionar sexo del usuario</label> 
+        <div class="sexo-container">
+        <label><input type="radio" name="sexo" id="masculino" value="masculino"> Masculino</label>
+        <label><input type="radio" name="sexo" id="femenino" value="femenino"> Femenino</label>
+        </div>
+        <label for="DOB">Seleccione fecha de nacimiento
+        <input type="date" name="DOB" id="DOB"></label>
+    
+    <label for="personaje">Selecciona personaje
+        <select name="personaje" id="personaje">
+            <option value="1">Jessie Pinkman</option>
+            <option value="2">Walter White,</option>
+            <option value="3">Saul Goodman</option>
+            <option value="4">Gustavo Fring</option>
+            <option value="5">Pollos Hermanos</option>
+            <option value="6">Otros personajes</option>
+        </select>
+    </label>
+        <label for="comentarios">Comentarios
+        <textarea id="comentarios" name="comentarios" placeholder="¿Tienes algo que contarnos?"></textarea>
+    </label>
+        <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple>
+   
+        <input type="submit" value="Enviar formulario">
+        <input type="reset" value="Reestablecer">
+        
+    
+    </form>  
+</body>
+</html>
